@@ -1,4 +1,4 @@
-namespace naviy10.Mods {
+namespace Dremel.Mods {
   public class Safety {
     public static void antireport()
         {

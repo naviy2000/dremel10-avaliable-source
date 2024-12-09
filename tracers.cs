@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using GorillaLocomotion;
 
-namespace naviy10.Mods {
+namespace Dremel.Mods {
   public class Visual {
     public static bool PlayerIsTagged(VRRig who)
         {

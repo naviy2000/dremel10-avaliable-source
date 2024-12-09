@@ -2,7 +2,7 @@ using UnityEngine;
 using GorillaLocomotion;
 using System;
 
-namespace naviy10.Mods {
+namespace Dremel.Mods {
 	public class Movement {
 		public leftplat = null;
     
