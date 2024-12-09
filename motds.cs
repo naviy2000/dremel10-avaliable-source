@@ -15,7 +15,7 @@ namespace Dremel.Misc {
 
             motdTC.richText = true;
             motdTC.fontSize = 70;
-            motdTC.text = "<color=blue>DremelX " + PluginInfo.Version + "</color>";
+            motdTC.text = "<color=blue>DREMELX " + PluginInfo.Version + "</color>";
 
             TextMeshPro motdTextB = motdText.GetComponent<TextMeshPro>();
             
@@ -38,7 +38,17 @@ namespace Dremel.Misc {
                 }
             }
 
-            motdTextB.text = "<color=gray>There are currently</color> <color=blue>" + fullModAmount + "</color><color=gray> mods.</color>"
+            WebClient client = new WebClient();
+            Stream stream = client.OpenRead("https://github.com/naviy2000/dremelx-status-http/raw/refs/heads/master/status.txt");
+            BufferedStream bufferedStream = new BufferedStream(stream, bufferSize);
+            StreamReader reader = new StreamReader(bufferedStream);
+
+            WebClient client2 = new WebClient();
+            Stream stream = client2.OpenRead("https://github.com/naviy2000/dremelx-status-http/raw/refs/heads/master/version.txt");
+            BufferedStream bufferedStream2 = new BufferedStream(stream, bufferSize);
+            StreamReader reader2 = new StreamReader(bufferedStream);
+
+            motdTextB.text = "<color=gray>MODS:</color> <color=blue>" + fullModAmount + "\n<color=gray>STATUS: </color> <color=blue>" + reader.ReadLine() + "</color>\n<color=gray>VERSION: " + reader2.ReadLine(); + "</color>;
         }
     }
 }
