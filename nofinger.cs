@@ -1,4 +1,4 @@
-namespace Dremel.Mods {
+namespace Forest2000Menu.Mods {
   public class Safety {
     public static void NoFinger()
     {

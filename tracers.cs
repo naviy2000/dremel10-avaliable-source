@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using GorillaLocomotion;
 
-namespace Dremel.Mods {
+namespace Forest2000Menu.Mods {
   public class Visual {
     public static bool PlayerIsTagged(VRRig who)
         {

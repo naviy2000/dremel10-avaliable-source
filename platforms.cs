@@ -2,7 +2,7 @@ using UnityEngine;
 using GorillaLocomotion;
 using System;
 
-namespace Dremel.Mods {
+namespace Forest2000Menu.Mods {
 	public class Movement {
 		public leftplat = null;
     
