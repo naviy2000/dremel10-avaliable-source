@@ -1,3 +1,8 @@
+using System;
+using GorillaLocomotion;
+using UnityEngine;
+using DremelX.PluginInfo;
+
 namespace Dremel.Misc {
     public class MOTDBoard {
         public static void SetBoards() {
@@ -10,7 +15,7 @@ namespace Dremel.Misc {
 
             motdTC.richText = true;
             motdTC.fontSize = 70;
-            motdTC.text = "<color=blue>Dremel Ultimate</color>";
+            motdTC.text = "<color=blue>DremelX " + PluginInfo.Version + "</color>";
 
             TextMeshPro motdTextB = motdText.GetComponent<TextMeshPro>();
             
